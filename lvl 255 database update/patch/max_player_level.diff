@@ -1,0 +1,19 @@
+ src/server/game/DataStores/DBCEnums.h          |  4 +--
+diff --git a/src/server/game/DataStores/DBCEnums.h b/src/server/game/DataStores/DBCEnums.h
+index cb2cfbd2c7..c12f097c19 100644
+--- a/src/server/game/DataStores/DBCEnums.h
++++ b/src/server/game/DataStores/DBCEnums.h
+@@ -43,11 +43,11 @@ enum LevelLimit
+     // Client expected level limitation, like as used in DBC item max levels for "until max player level"
+     // use as default max player level, must be fit max level for used client
+     // also see MAX_LEVEL and STRONG_MAX_LEVEL define
+-    DEFAULT_MAX_LEVEL = 80,
++    DEFAULT_MAX_LEVEL = 255,
+ 
+     // client supported max level for player/pets/etc. Avoid overflow or client stability affected.
+     // also see GT_MAX_LEVEL define
+-    MAX_LEVEL = 100,
++    MAX_LEVEL = 255,
+ 
+     // Server side limitation. Base at used code requirements.
+     // also see MAX_LEVEL and GT_MAX_LEVEL define
